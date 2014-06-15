@@ -1,0 +1,12 @@
+# Temporary directories
+download
+source
+build
+saturn-sdk
+installerpackage
+
+# Vim
+*.vim
+*.swp
+*.swo
+*.swn
