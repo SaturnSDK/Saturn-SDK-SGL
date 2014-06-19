@@ -43,7 +43,7 @@ cat > $ROOTDIR/installerpackage/org.opengamedevelopers.sega.saturn.sdk.lib.sgl/m
 __EOF__
 
 printf "Packaging $INSTALLDIR ... "
-$QTIFWDIR/bin/archivegen $ROOTDIR/installerpackage/org.opengamedevelopers.sega.saturn.sdk.lib.sgl/data/directory.7z $INSTALLDIR/lib $INSTALLDIR/include
+$QTIFWDIR/bin/archivegen $ROOTDIR/installerpackage/org.opengamedevelopers.sega.saturn.sdk.lib.sgl/data/directory.7z $INSTALLDIR
 if [ $? -ne "0" ]; then
 	printf "FAILED\n"
 	exit 1

@@ -12,11 +12,11 @@ cp $SRCDIR/sgl/lib/* ./lib
 chmod 644 ./lib/*
 
 for file in ./lib/*.a; do
-	$SATURNSDK/toolchain/bin/sh-elf-objcopy -Icoff-sh -Oelf32-sh $file
+	$SATURNSDK/toolchain/bin/${PROGRAM_PREFIX}objcopy -Icoff-sh -Oelf32-sh $file
 done
 
 for file in ./lib/*.o; do
-	$SATURNSDK/toolchain/bin/sh-elf-objcopy -Icoff-sh -Oelf32-sh $file
+	$SATURNSDK/toolchain/bin/${PROGRAM_PREFIX}objcopy -Icoff-sh -Oelf32-sh $file
 done
 
 mkdir -p $INSTALLDIR/lib/sgl
